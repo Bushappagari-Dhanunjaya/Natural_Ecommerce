@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body onload="signUpDetail()">
+
+    <form action="index.html">
+    <div class="login">
+		<div class="title">Sign Up</div>
+        <div class="group">
+			<input type="text" placeholder="Enter Email" required>
+		</div>
+        <div class="group">
+			<input type="text" placeholder="Enter Mobile no" required>
+		</div>
+		<div class="group">
+			<input type="text" placeholder="Enter username" required>
+		</div>
+		<div class="group">
+			<input type="password" id="inputPassword" placeholder="Password" required>
+			<span id="showPassword">
+				<ion-icon name="eye-outline" ></ion-icon>
+			</span>
+		</div>
+        <div class="group">
+			<input type="password" id="inputPassword2" placeholder="Confirm Password" required>
+			<span id="showPassword2">
+				<ion-icon name="eye-outline" ></ion-icon>
+			</span>
+		</div>
+		<div class="signIn">
+			<button type="submit">SignUp</button>
+		</div>
+		<div class="register">
+			Already have an account? <a href="login.html">Login now</a>
+		</div>
+
+	</div>
+</form>
+
+	<script src="script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

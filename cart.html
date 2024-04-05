@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#"><span>N</span>atural</a>
+      <ul class="menu-links">
+        <span id="close-menu-bar">
+
+          <lord-icon src="https://cdn.lordicon.com/nqtddedc.json" trigger="hover" colors="primary:#000"
+            style="width:40px;height:40px">
+          </lord-icon>
+        </span>
+        <li><a href="index.html" class="all-link">Home</a></li>
+        <li><a href="index.html#reputation-section" class="all-link">Brands</a></li>
+        <li><a href="index.html#product-section" class="all-link">Products</a></li>
+        <li><a href="index.html#connection-section" class="all-link">FollowUs</a></li>
+        <li><a href="#about-section" class="all-link">AboutUs</a></li>
+        <li>
+
+          <a href="#">
+
+            <lord-icon src="https://cdn.lordicon.com/mfmkufkr.json" trigger="hover" colors="primary:#000000"
+              style="width:30px;height:30px">
+            </lord-icon>
+          </a>
+          <span id="cart-product-count"></span>
+        </li>
+        <li><a href="login.html">
+
+            <lord-icon src="https://cdn.lordicon.com/kthelypq.json" trigger="hover" colors="primary:#000000"
+              style="width:30px;height:30px">
+            </lord-icon>
+          </a></li>
+      </ul>
+      <span id="menu-bar">
+
+        <lord-icon src="https://cdn.lordicon.com/eouimtlu.json" trigger="hover" colors="primary:#000"
+          style="width:40px;height:40px;">
+        </lord-icon>
+      </span>
+    </nav>
+  </header>
+
+  <h2 class="common-heading-text"><span style="color: #6cfa1a;">Cart</span> Items</h2>
+  <div class="cart-container" id="cart-container">
+
+  </div>
+
+  <div class="total-price">
+    <p>Total Price : <span id="bill"></span>/-</p>
+  </div>
+
+  <div class="pay-bill">
+    <p><button onclick="proceedToPay()" id="pay-button">Proceed to pay</button></p>
+    </p>
+  </div>
+
+  <!-- footer -->
+
+  <br><br>
+  <a href="#" name="about-section"></a>
+  <h2 class="common-heading-text"><span style="color:#6cfa1a">About</span> Us</h2>
+  <footer class="section footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <a href="#" class="logo-content">
+
+          <span class="logo-text">Natural</span>
+        </a>
+
+        <p class="content-description">203 kogilu cross, Yelahanka, Bangalore,Karnataka
+          +91 9642XXXXXX
+          bdhanuxxxx@gmail.com</p>
+
+        <div class="footer-location">
+
+          <div class="location-text">
+            Bangalore, Karnataka, India
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-linkContent">
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Company</h4>
+
+          <li><a href="#" class="footer-link">CEO</a></li>
+          <li><a href="#" class="footer-link">Great Discounts</a></li>
+          <li><a href="#" class="footer-link">hygienic Products</a></li>
+          <li><a href="#" class="footer-link">Pure Natural Products</a></li>
+          <li><a href="#" class="footer-link">Refer And Earn</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Connect with Us</h4>
+
+          <li><a href="#" class="footer-link"><i class='bx bxl-facebook-circle'></i> Facebook</a></li>
+          <li><a href="#" class="footer-link"><i class='bx bxl-instagram'></i> Instagram</a></li>
+          <li><a href="#" class="footer-link"><i class='bx bxl-youtube'></i> Youtube</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Support</h4>
+
+          <li><a href="#" class="footer-link">About Us</a></li>
+          <li><a href="#" class="footer-link">FAQs</a></li>
+          <li><a href="#" class="footer-link">Private Policy</a></li>
+          <li><a href="#" class="footer-link">Help Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyRight">&#169; Copyright 2024. All rigths reserved</div>
+  </footer>
+
+
+</body>
+<script src="cart.js"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+</html>

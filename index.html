@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Fruits Website</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body onload="loadMenu()">
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#"><span>N</span>atural</a>
+      <ul class="menu-links">
+        <span id="close-menu-bar">
+
+          <lord-icon src="https://cdn.lordicon.com/nqtddedc.json" trigger="hover" colors="primary:#000"
+            style="width:40px;height:40px">
+          </lord-icon>
+        </span>
+        <li><a href="#" class="all-link active">Home</a></li>
+        <li><a href="#reputation-section" class="all-link">Brands</a></li>
+        <li><a href="#product-section" class="all-link">Products</a></li>
+        <li><a href="#connection-section" class="all-link">FollowUs</a></li>
+        <li><a href="#about-section" class="all-link">AboutUs</a></li>
+        <li>
+
+          <a href="cart.html">
+
+            <lord-icon src="https://cdn.lordicon.com/mfmkufkr.json" trigger="hover" colors="primary:#000000"
+              style="width:30px;height:30px">
+            </lord-icon>
+          </a>
+          <span id="cart-product-count"></span>
+        </li>
+        <li><a href="login.html">
+
+            <lord-icon src="https://cdn.lordicon.com/kthelypq.json" trigger="hover" colors="primary:#000000"
+              style="width:30px;height:30px">
+            </lord-icon>
+          </a></li>
+      </ul>
+      <span id="menu-bar">
+
+        <lord-icon src="https://cdn.lordicon.com/eouimtlu.json" trigger="hover" colors="primary:#000"
+          style="width:40px;height:40px;">
+        </lord-icon>
+      </span>
+    </nav>
+  </header>
+
+  <section class="home-bg" id="change-bg">
+    <div class="home-bg-content">
+      <h2>Start Your Day With Fresh <span>F</span>ruits</h2>
+      <p>
+        Coffee is a popular and beloved beverage enjoyed by
+        people around the world.Awaken your senses with a steaming cup of liquid motivation.
+      </p>
+      <button onclick="location.href='#product-section'">Order Now</button>
+    </div>
+  </section>
+
+  <!-- reputation -->
+
+  <a href="#" name="reputation-section"></a>
+  <h2 class="common-heading-text"><span style="color:#6cfa1a">About</span> Our Reputation</h2>
+  <div class="reputation">
+
+    <div class="card-info">
+
+      <div class="rotate"></div>
+      <p> <lord-icon src="https://cdn.lordicon.com/jfwzwlls.json" trigger="hover" colors="primary:#000000"
+          style="width:60px;height:60px">
+        </lord-icon></p>
+      <h3>Fastest Delivery</h3>
+
+      <p>Promise to deliver orders promptly and reliably,
+        with accurate tracking information provided to customers. Offering expedited
+        shipping options can also enhance customer satisfaction.</p>
+
+    </div>
+
+    <div class="card-info">
+
+      <div class="rotate change-one"></div>
+      <p><lord-icon src="https://cdn.lordicon.com/axteoudt.json" trigger="hover" colors="primary:#000000"
+          style="width:60px;height:60px">
+        </lord-icon> </p>
+      <h3>Customer Support </h3>
+      <p>Assurance of responsive and helpful customer support to address inquiries,
+        resolve issues, and provide assistance before, during, and after the purchase process.</p>
+
+
+    </div>
+
+    <div class="card-info">
+
+      <div class="rotate change-two"></div>
+      <p> <lord-icon src="https://cdn.lordicon.com/oqdmuxru.json" trigger="hover" colors="primary:#000000"
+          style="width:60px;height:60px">
+        </lord-icon></p>
+      <h3>Quality Products</h3>
+      <p>Promise to offer high-quality products that meet or exceed customer expectations.
+        This includes ensuring the authenticity, durability, and functionality of the products sold.</p>
+
+    </div>
+
+    <div class="card-info">
+
+      <div class="rotate change-thr"></div>
+      <p style="text-align: center;">
+        <lord-icon src="https://cdn.lordicon.com/gfgzffjw.json" trigger="hover" colors="primary:#000000"
+          style="width:60px;height:60px;">
+        </lord-icon>
+      </p>
+      <h3>Transparent Pricing </h3>
+      <p>Commitment to transparent pricing with no hidden fees or charges. Clearly display product prices,
+        shipping costs, and any additional fees upfront to avoid surprises at checkout.</p>
+
+    </div>
+  </div>
+
+  <!-- products and search -->
+
+  <br><br>
+  <a href="#" name="product-section"></a>
+  <h2 class="common-heading-text"><span style="color: #6cfa1a;">Explore</span> Products</h2>
+  <div class="container" id="prod-container">
+    <form class="filter">
+      <div class="item">
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="">---</option>
+          <option value="fruits">Fruits</option>
+          <option value="vegetables">Vegetables</option>
+        </select>
+      </div>
+
+      <div class="item">
+        <label for="">Name</label>
+        <input type="text" name="name">
+      </div>
+
+      <div class="item submit">
+        <button>Search</button>
+      </div>
+    </form>
+    <div class="countResults">
+      Found <b id="count">5</b> results
+    </div>
+    <div id="list">
+
+    </div>
+  </div>
+
+  <!-- scrollnums -->
+
+
+  <br><br>
+  <a href="#" name="connection-section"></a>
+  <h2 class="common-heading-text"><span style="color:#6cfa1a">Follow</span> Us</h2>
+  <div class="wrapper">
+    <div class="scroll-num">
+      <span class="num"><img src="Youtube_logo.png" alt="Youtube" width="100"></span>
+      <span class="text">100k Followers</span>
+    </div>
+    <div class="scroll-num">
+      <span class="num"><img src="Instagram_icon.png" alt="Instagram" width="80"></span>
+      <span class="text">90k Followers</span>
+    </div>
+    <div class="scroll-num">
+      <span class="num"><img src="Facebook_logo.svg" alt="Facebook" width="90"></span>
+      <span class="text">60k Followers</span>
+    </div>
+    <div class="scroll-num">
+      <span class="num"><img src="Twitter_logo.webp" alt="Twitter" width="90"></span>
+      <span class="text">40k Followers</span>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <br><br>
+  <a href="#" name="about-section"></a>
+  <h2 class="common-heading-text"><span style="color:#6cfa1a">About</span> Us</h2>
+  <footer class="section footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <a href="#" class="logo-content">
+
+          <span class="logo-text">Natural</span>
+        </a>
+
+        <p class="content-description">203 kogilu cross, Yelahanka, Bangalore, Karnataka
+          +91 9642XXXXXX
+          bdhanuxxxx@gmail.com</p>
+
+        <div class="footer-location">
+
+          <div class="location-text">
+            Bangalore, Karnataka, India
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-linkContent">
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Company</h4>
+
+          <li><a href="#" class="footer-link">CEO</a></li>
+          <li><a href="#" class="footer-link">Great Discounts</a></li>
+          <li><a href="#" class="footer-link">hygienic Products</a></li>
+          <li><a href="#" class="footer-link">Pure Natural Products</a></li>
+          <li><a href="#" class="footer-link">Refer And Earn</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Connect with Us</h4>
+
+          <li><a href="#" class="footer-link"><i class='bx bxl-facebook-circle'></i> Facebook</a></li>
+          <li><a href="#" class="footer-link"><i class='bx bxl-instagram'></i> Instagram</a></li>
+          <li><a href="#" class="footer-link"><i class='bx bxl-youtube'></i> Youtube</a></li>
+        </ul>
+        <ul class="footer-links">
+          <h4 class="footerLinks-title">Support</h4>
+
+          <li><a href="#" class="footer-link">About Us</a></li>
+          <li><a href="#" class="footer-link">FAQs</a></li>
+          <li><a href="#" class="footer-link">Private Policy</a></li>
+          <li><a href="#" class="footer-link">Help Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyRight">&#169; Copyright 2024. All rigths reserved</div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
